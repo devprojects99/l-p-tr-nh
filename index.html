@@ -2,71 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trang Web Của Tôi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 300px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .image-item {
-            width: 300px;
-            background-color: transparent;
-            border: none;
-            border-radius: 0;
-            overflow: visible;
-            box-shadow: none;
-        }
-
-        .image-item img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            display: block;
-            border-radius: 12px;
-        }
-
-        .image-item p {
-            margin: 12px 0 0;
-            color: #000;
-            line-height: 1.5;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> xin Chào</h1>
-    <br><h2>Giới thiệu</h2><p>tôi tên là Nguyễn Quan Lộc</p>
-    <h3>đang học về lập trình</h3>
-    <h4> sinh viên năm 2</h4>
-    <h5>爱好</h5>
-    <h6>thích lặp trình</h6>
-    <p style="color: rgb(223, 41, 177);">Tôi là một lập trình viên cơ bản </p>
+    <h1 class="fancy-underline"> Nguyễn Quan Lộc </h1>
+    <h2>Sinh viên năm 2 - Ngành Công nghệ Thông tin</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8ZE_EZEtNOkDbNntwahdT17ahAbp1yER-356V3fSlA&s" alt="Nguyễn Quan Lộc" width="300">
+    <br>
+    <p>Xin chào, mình là Nguyễn Quan Lộc, hiện đang là sinh viên năm 2 chuyên ngành Công nghệ Thông tin tại Trường Đại học ABC. Mình đam mê lập trình web và đang trong quá trình học rất nghiêm túc môn Lập trình Web cơ bản.</p>
+    <br>
+    <p>Sở trường của mình là HTML/CSS và mình đang học thêm về JavaScript. Mình tin rằng nắm chắc HTML thuần là nền tảng bắt buộc phải có trước khi học tới các thư viện/ framework khác.
+</p>
+     <hr>
+<h1> Thông tin liên hệ</h1>
+    <li>Họ và tên: Nguyễn Quan Lộc</li>
+    <li>Email: nguyenquanloc@gmaile.com</li>
+    <li>Phone: 0123456789</li>
+    <li>Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí Minh</li>
+    <hr>
+<h1>Sở thích cá nhân</h1>
+    <ul>
+        <li>Lập trình & xây dựng website cá nhân</li>
+        <li>Đọc sách công nghệ</li>
+        <li>Chơi cầu lông vào cuối tuần</li>
+        <li>Xem phim tài liệu khoa học</li>
+    </ul>
+    <hr>
+    <section class="education-section">
+        <h1>Quá trình học tập</h1>
+        <table class="education-table">
+            <thead>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Bậc học</th>
+                    <th>Trường</th>
+                    <th>Kết quả</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time">2015 - 2019</td>
+                    <td class="level">Trung học Phổ thông</td>
+                    <td class="school">THPT Nguyễn Huệ</td>
+                    <td class="result">Học sinh Khá</td>
+                </tr>
+                <tr>
+                    <td class="time">2019 - 2023</td>
+                    <td class="level">Đại học</td>
+                    <td class="school">Đại học ABC - Ngành CNTTT</td>
+                    <td class="result">Đang học - GPA 3.4/4.0</td>
+                </tr>
+                <tr class="current">
+                    <td class="time">Hiện tại</td>
+                    <td class="level">Đại học</td>
+                    <td class="school">Đang học kỳ 6 - Môn: Lập trình Web cơ bản</td>
+                    <td class="result"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <h1> Liên kết</h1>
+    <ul>
+        <li>Xem GitHub cá nhân của mình (mở tab mới)</li>
+    </ul>
 
-    <div class="image-container">
-        <div class="image-item">
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg" alt="Hình ảnh lập trình">
-            <p>Lập trình là một lĩnh vực quan trọng trong công nghệ thông tin. Nó liên quan đến việc viết mã để tạo ra các ứng dụng, phần mềm và hệ thống máy tính. Lập trình viên sử dụng các ngôn ngữ lập trình khác nhau để phát triển các giải pháp sáng tạo và hiệu quả.</p>
-        </div>
 
-        <div class="image-item">
-            <img src="https://hinh365.com/wp-content/uploads/2020/06/2ec07b9c90ac69b5521ba256d8ed7cbb.jpg" alt="Hình ảnh lập trình">
-            <p>Các lập trình viên sẽ sử dụng nhiều ngôn ngữ lập trình khác nhau (ví dụ như Python, Java, JavaScript, C++,...) để phát triển và hoàn thiện các sản phẩm công nghệ phục vụ đời sống.</p>
-        </div>
-
-        <div class="image-item">
-            <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/03/lap-trinh-vien-0.jpg" alt="Hình ảnh lập trình">
-            <p>Chạy thử phần mềm để tìm lỗi và sửa lại cho đến khi hệ thống hoạt động mượt mà. Nâng cấp và bảo trì: Cập nhật các tính năng mới và đảm bảo phần mềm hoạt động ổn định, bảo mật theo thời gian.</p>
-        </div>
-    </div>
 </body>
 </html>

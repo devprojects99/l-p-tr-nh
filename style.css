@@ -1,269 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Georgia:wght@400;700&display=swap');
-
-:root {
-  --bg: #5a564d;
-  --panel: rgba(0, 0, 0, 0.06);
-  --text: #f7f2ee;
-  --muted: #d7d1cb;
-  --blue: #b9cfe8;
-  --gray: #eceae8;
-  --link: #d34d37;
-  --highlight: #f7d654;
-  --badge-html: #e37c4a;
-  --badge-css: #5d6bd9;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Georgia", serif;
+  background: #efefef;
+  font-family: "Times New Roman", serif;
+  color: #111;
 }
 
-.page {
+.container {
   width: 100%;
-  max-width: 1200px;
-  padding: 24px 28px 18px 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
 }
 
-.title {
-  margin: 0 0 18px;
-  font-size: 4.1rem;
-  line-height: 1.1;
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-wrap {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  background: #d9d9d9;
+  border: 2px solid #4aa8d8;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
   font-weight: 700;
-  color: var(--blue);
-  font-family: "Comic Neue", cursive;
-  letter-spacing: -2px;
+  line-height: 1.2;
 }
 
-.intro {
-  width: 100%;
-  padding: 10px 0 14px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.35);
-  font-size: 1.12rem;
+.subtitle {
+  margin: 10px 0 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.top-line {
+  border: none;
+  border-top: 2px solid #4aa8d8;
+  margin: 18px 0 20px;
+}
+
+.panel {
+  background: #f3f3f3;
+  border: 1px solid #d8d8d8;
+  padding: 18px 20px 16px;
   margin-bottom: 18px;
-  color: #f5f5f5;
 }
 
-.name {
-  font-weight: bold;
-}
-
-.jolly {
-  font-style: italic;
-}
-
-.clumsy {
-  font-style: italic;
-}
-
-.four-eyed {
-  font-style: italic;
-}
-
-.group {
-  margin-top: 16px;
-}
-
-h2 {
-  margin: 0 0 14px;
-  color: var(--blue);
-  font-family: "Comic Neue", cursive;
-  font-size: 2.2rem;
+.panel h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  font-size: 30px;
   font-weight: 700;
-  letter-spacing: -1px;
+  display: inline-block;
+  border-bottom: 3px solid #4aa8d8;
 }
 
-ul, ol {
+.panel p,
+.panel li,
+.panel td,
+.panel th,
+.panel a {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro-panel p {
   margin: 0;
-  padding-left: 22px;
+  font-size: 20px;
 }
 
-li {
-  margin: 8px 0;
-  font-size: 1.08rem;
-  line-height: 1.4;
-}
-
-.classes {
-  list-style: disc;
-}
-
-.note {
-  margin: 0 0 8px;
-  font-style: italic;
-  color: #ede3dc;
-}
-
-.movies li {
-  margin-left: 2px;
-}
-
-.imdb {
-  color: var(--link);
-  font-weight: bold;
-  font-style: italic;
-}
-
-.moods {
-  display: flex;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-figure {
+.skill-panel ul {
   margin: 0;
-  width: 420px;
+  padding-left: 24px;
 }
 
-figure img {
+.skill-panel li {
+  margin-bottom: 6px;
+  list-style: square;
+}
+
+.experience-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+}
+
+.experience-panel th,
+.experience-panel td {
+  border: 1px solid #bdbdbd;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.experience-panel th {
+  background: #3ca2d9;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact-panel {
+  text-align: center;
+}
+
+.contact-panel h2 {
   display: block;
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: #d8d2cc;
+  text-align: left;
 }
 
-figcaption {
-  margin-top: 8px;
-  color: #f7f1ec;
-  font-size: 1.05rem;
+.email {
+  margin: 18px 0 20px;
+  font-size: 18px;
 }
 
-.facts {
-  list-style: disc;
-  margin-top: 10px;
+.email a {
+  color: #d83d3d;
+  text-decoration: none;
 }
 
-.fun-text {
-  font-style: italic;
-  color: #7ee7b0;
-}
-
-.badges {
-  margin-top: 18px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.badge {
-  display: inline-block;
-  padding: 2px 5px;
-  font-size: 0.72rem;
+button {
+  background: #34c77b;
+  border: none;
+  color: #fff;
+  font-size: 18px;
   font-weight: 700;
-  color: #fff;
-  border-radius: 3px;
-  line-height: 1.2;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+  padding: 10px 22px;
+  cursor: pointer;
 }
 
-.badge.html {
-  background: var(--badge-html);
-}
-
-.badge.css {
-  background: var(--badge-css);
-}
-
-.html-label,
-.css-label {
-  padding: 1px 4px;
-  border-radius: 2px;
-  font-size: 0.66rem;
-  color: #fff;
-  background: #a0441a;
-}
-
-.css-label {
-  background: #3747ac;
-}
-
-/* Underline and strike examples */
-.underline {
-	text-decoration: underline;
-	text-decoration-thickness: 2px;
-	text-decoration-color: #000;
-}
-.strike {
-	text-decoration: line-through;
-	color: #666;
-}
-.fancy-underline {
-	display: inline-block;
-	padding-bottom: 6px;
-	border-bottom: 4px solid #e91e63;
-}
-hr {
-	border: none;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-}
-
-/* Education table styles */
-.education-section h1 {
-	font-size: 1.2rem;
-	margin-top: 1.5rem;
-}
-.education-table {
-	width: 100%;
-	border-collapse: collapse;
-	font-size: 14px;
-}
-.education-table th,
-.education-table td {
-	border: 1px solid #000;
-	padding: 6px 8px;
-	vertical-align: middle;
-}
-.education-table th {
-	background: #f2f2f2;
-	text-align: left;
-}
-.education-table td.time {
-	width: 14%;
-}
-.education-table td.level {
-	width: 22%;
-}
-.education-table td.school {
-	width: 44%;
-}
-.education-table td.result {
-	width: 20%;
-}
-.education-table tr.current td.school {
-	background: #eee;
+button:hover {
+  background: #2eb871;
 }
 
 @media (max-width: 768px) {
-  .page {
-    padding: 18px 16px 30px;
+  .container {
+    padding: 16px 14px 30px;
   }
 
-  .title {
-    font-size: 2.6rem;
+  h1 {
+    font-size: 34px;
   }
 
-  h2 {
-    font-size: 1.6rem;
+  .subtitle {
+    font-size: 18px;
   }
 
-  .moods {
-    flex-direction: column;
+  .panel h2 {
+    font-size: 26px;
   }
 
-  figure {
-    width: 100%;
+  .panel p,
+  .panel li,
+  .panel td,
+  .panel th,
+  .panel a {
+    font-size: 16px;
   }
 }
-
-
